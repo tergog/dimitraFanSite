@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/screen.css">
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <base href="/">
+    <title>DIMITRA</title>
+</head>
+<body ng-app="MagentoPortfolio">
+<div class="container-fluid minus-padding">
+    <div class="row">
+        <div class="col-md-3">
+            <main></main>
+        </div>
+        <div class="col-md-9">
+            <div ui-view></div>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+<script src="https://angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+
+<script src="app.js"></script>
+<script src="js/dir.js"></script>
+<script src="partials/album/controller.js"></script>
+</body>
+</html>

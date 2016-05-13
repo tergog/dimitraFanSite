@@ -1,0 +1,47 @@
+[
+  {
+    "altText": "Lorem ipsum dolor sit amet",
+    "image": "/images/work1.jpg",
+    "url": "inner"
+  },
+  {
+    "altText": "Lorem ipsum dolor sit amet",
+    "image": "/images/work3.jpg",
+    "url": "inner"
+  },
+  {
+    "altText": "Lorem ipsum dolor sit amet",
+    "image": "/images/work7.jpg",
+    "url": "inner"
+  },
+  {
+    "altText": "Lorem ipsum dolor sit amet",
+    "image": "/images/work4.jpg",
+    "url": "inner"
+  },
+  {
+    "altText": "Lorem ipsum dolor sit amet",
+    "image": "/images/work5.jpg",
+    "url": "inner"
+  },
+  {
+    "altText": "Lorem ipsum dolor sit amet",
+    "image": "/images/work6.jpg",
+    "url": "inner"
+  },
+  {
+    "altText": "Lorem ipsum dolor sit amet",
+    "image": "/images/work8.jpg",
+    "url": "inner"
+  },
+  {
+    "altText": "Lorem ipsum dolor sit amet",
+    "image": "/images/work2.jpg",
+    "url": "inner"
+  },
+  {
+    "altText": "Lorem ipsum dolor sit amet",
+    "image": "/images/work9.jpg",
+    "url": "inner"
+  }
+]

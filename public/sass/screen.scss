@@ -1,0 +1,249 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "partials/normalize";
+@import "compass/css3";
+
+body {
+  @include transition(0.2s);
+}
+.container-fluid {
+  padding:0;
+  overflow: hidden;
+}
+main {
+  margin-left: 50px;
+  width: 300px;
+  position: fixed;
+#logo {
+  margin: 70px 0;
+  font-family: 'Arial';
+  font-size: 30px;
+}
+  a {
+    color: #0A5D63;
+    @include transition(0.5s);
+    &:hover {
+      opacity: 0.5;
+      text-decoration: none;
+    }
+    &:focus {
+      text-decoration: none;
+    }
+  }
+nav {
+  li {
+    list-style: none;
+    padding: 20px 0;
+  }
+}
+}
+  footer {
+    margin-top:300px;
+    p {
+      padding:20px 0;
+    }
+  }
+  .socials ul {
+    padding: 20px 0;
+    li {
+      padding-right: 10px;
+      display: inline-block;
+      .facebook {
+        &:hover {
+          background: url('../images/sm_hover.png') 0 0;
+        }
+        height: 30px;
+        width: 30px;
+        display: block;
+        background: url("../images/sm.png") 0 0;
+      }
+
+      .behance {
+        @extend .facebook;
+        &:hover {
+          background: url('../images/sm_hover.png') -62px 0;
+        }
+        background: url("../images/sm.png") -62px 0;
+      }
+
+      .google {
+        @extend .facebook;
+        &:hover {
+          background: url('../images/sm_hover.png') -31px 0;
+        }
+        background: url("../images/sm.png") -31px 0;
+      }
+    }
+  }
+  .album-wrap {
+    font-size:0;
+    clear: both;
+    width: 100%;
+    float: left;
+    .media {
+      width: 100%;
+      img {
+        max-width: 100%;
+      }
+    }
+      div {
+        width: 33.33%;
+        float: left;
+        position: relative;
+        .img-text-wrap {
+          vertical-align: middle;
+          @include transition(all .1s linear);
+          &:hover {
+            background: whitesmoke;
+            z-index: 1;
+          }
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top:0;
+          left:0;
+          .img-text {
+            margin-top: -40px;
+            transition: none;
+            display: block;
+            text-align: center;
+            width: 100%;
+            top: 50%;
+            position: absolute;
+            z-index: -1;
+            h1 {
+              max-width: 90%;
+              color: #454545;
+              border-bottom: 1px solid #bfbbbb;
+              border-top: 1px solid #bfbbbb;
+              padding: 20px 0;
+              display: inline-block;
+              font: 20px Arial;
+            }
+          }
+        }
+      }
+  }
+  .inner-img {
+    width:100%;
+    height: 450px;
+    float: right;
+    background: url('../images/work10.jpg') no-repeat 50% 20%;
+    background-size: cover;
+    position: relative;
+  }
+  .inner-text-wrap {
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    margin: 0 auto;
+    margin-left: -45%;
+    left: 50%;
+    background: rgba(255, 255, 255, .7);
+    max-height: 100%;
+    h1 {
+      text-transform: uppercase;
+      font: 26px Arial;
+      font-weight: 700;
+      display: block;
+      width: 90%;
+      padding: 15px;
+    }
+  }
+
+  .form-wrap {
+    padding: 15px;
+    width:50%;
+  }
+
+
+  .wrap-plain-text {
+    float: right;
+    width: 100%;
+    background: whitesmoke;
+    .plain-text {
+      width: 90%;
+      background: rgba(255, 255, 255, .7);
+      margin: 0 auto;
+      h2 {
+        line-height: 28px;
+        font: 24px Arial;
+        font-weight:700;
+        display: block;
+        padding: 5px 25px;
+      }
+      p {
+        display: block;
+        padding: 45px 25px;
+        font:16px Arial;
+        line-height: 1.5;
+      }
+    }
+  }
+@media only screen and  (max-width: 992px) {
+  main {
+    float: left;
+    margin-left: 0;
+    position: relative;
+    #logo {
+      width: 50%;
+      margin: 40px 0 0 30px;
+      padding: 0;
+      float: left;
+    }
+    display: block;
+    width: 100%;
+    min-height: 100px;
+  }
+  .nav-logo {
+    cursor: pointer;
+    margin: 35px 30px 0 0;
+    float: right;
+    width: 40px;
+    height: 40px;
+    background: url("../images/men_icons.png");
+  }
+    nav ul {
+      width: 100%;
+      background: white;
+      position: absolute;
+      top: 100px;
+      li {
+        padding: 0;
+        text-align: center;
+        vertical-align: middle;
+        border-top: 1px solid whitesmoke;
+        a {
+          @include transition(all .1s linear);
+          padding: 30px 0;
+          display: block;
+          width: 100%;
+          height:100%;
+          &:active {
+            background: whitesmoke;
+          }
+        }
+      }
+    }
+  .nav-logo-x {
+    background: url("../images/men_icons.png") -40px 0;
+  }
+  .nav-content-x{
+    z-index: 9999;
+  }
+
+  .album-wrap div {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 550px) {
+
+  .album-wrap div{
+    width: 100%;
+    }
+  }
+

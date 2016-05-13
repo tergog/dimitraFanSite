@@ -1,0 +1,11 @@
+<div class="album-wrap">
+    <div ng-repeat="image in albumCtrl.data">
+        <a ui-sref={{image.url}}><img ng-src={{image.image}} class="media"/>
+            <div class="img-text-wrap">
+                <div class="img-text">
+                    <h1>{{image.altText}}</h1>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
